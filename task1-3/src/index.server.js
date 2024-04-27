@@ -16,5 +16,5 @@ app.use("/api/task1", task1Routes);
 app.use("/api/task3", task3Routes);
 
 server.listen(process.env.PORT, () => {
-  console.log(`Server is running on port ${process.env.PORT}`);
+  console.log(`Server is running on port ${process.env.PORT || 2000}`);
 });
